@@ -1,25 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useContext } from 'react';
+import "./assets/css/app.css"
+import Header from "./components/Header"
+import Nav from './components/Nav';
+import Toggle from "./components/toggle"
+import About from "./components/About"
+import Services from "./components/Services"
+import Prices from "./components/Prices"
+import Features from "./components/features"
+import Overly from "./components/overly"
+import Deffent from "./components/defferent"
+import GlobalContextProvider from "./Context/globalContext"
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <GlobalContextProvider>
+      <Toggle />
+      <Header />
+      <Nav />
+      <About />
+      <Services />
+      <Prices />
+      <Deffent />
+      <Features />
+      <Overly />
+    </GlobalContextProvider>
   );
 }
 
