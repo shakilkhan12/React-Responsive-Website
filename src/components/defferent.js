@@ -9,7 +9,7 @@ const Defferent = () => {
 
                     </div>
                 </div>
-                <div className="col-6">
+                <div className="col-6 animate">
                     <div className="defferent-right">
                         <div className="center mb-40">
                             <h1 className="heading">Why we are defferent? </h1>

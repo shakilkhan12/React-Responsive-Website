@@ -23,7 +23,7 @@ const Features = () => {
             <div className="center mb-40">
                 <h1 className="heading">Feature tours</h1>
             </div>
-            <div className="row">
+            <div className="row animate">
 
                 {images.map(image => (
                     <div className="col-2 gallery" key={image} onClick={() => getImage(image)}>
